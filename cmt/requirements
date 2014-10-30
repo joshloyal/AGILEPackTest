@@ -4,10 +4,7 @@ author Joshua Loyal
 use AtlasPolicy     AtlasPolicy-*
 use GaudiInterface  GaudiInterface-*    External
 use AthenaBaseComps AthenaBaseComps-*   Control
-
-private
-use AGILEPack   AGILEPack-*
-end_private
+use AGILEPack       AGILEPack-*         External
 
 library AGILEPackTest *.cxx -s=components *.cxx
 apply_pattern component_library

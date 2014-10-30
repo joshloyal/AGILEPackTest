@@ -1,0 +1,14 @@
+package AGILEPackTest
+author Joshua Loyal
+
+use AtlasPolicy     AtlasPolicy-*
+use GaudiInterface  GaudiInterface-*    External
+use AthenaBaseComps AthenaBaseComps-*   Control
+
+private
+use AGILEPack   AGILEPack-*
+end_private
+
+library AGILEPackTest *.cxx -s=components *.cxx
+apply_pattern component_library
+apply_pattern declare_joboptions files="MyJobOptions.py"
